@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "XCXIB"
-  spec.version      = "1.0.0"
-  spec.summary      = "这是个常用xib的工具"
+  spec.version      = "1.0.1"
+  spec.summary      = "这是个常用xib的工具 author:成."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?

@@ -2,14 +2,14 @@
 //  UIView+HD.m
 //  djBI
 //
-//  Created by MQ on 2/24/16.
-//  Copyright © 2016 abnerh. All rights reserved.
+//  Created by XiaoCheng on 7/24/19.
+//  Copyright © 2019 赵思集团. All rights reserved.
 //
 
-#import "UIView+MQ.h"
+#import "UIView+Xc.h"
 #import <objc/runtime.h>
 
-@implementation UIView (MQ)
+@implementation UIView (Xc)
 
 - (CGFloat)cornerRadius
 {
@@ -52,18 +52,18 @@
 }
 
 
-+ (__kindof UIView *)MQLoadNibView{
++ (__kindof UIView *)XcLoadNibView{
     NSString *className = NSStringFromClass([self class]);
     return [[[UINib nibWithNibName:className bundle:nil] instantiateWithOwner:self options:nil] lastObject];
 }
 
 
--(void)MQViewSetCornerRadius:(CGFloat)radius{
+-(void)XcViewSetCornerRadius:(CGFloat)radius{
     [self.layer setMasksToBounds:YES];
     [self.layer setCornerRadius:radius];
 }
--(void)MQSetViewCircleWithBorderWidth:(CGFloat) width andColor:(UIColor *)borColor{
-    [self MQViewSetCornerRadius:(self.frame.size.height/2)];
+-(void)XcSetViewCircleWithBorderWidth:(CGFloat) width andColor:(UIColor *)borColor{
+    [self XcViewSetCornerRadius:(self.frame.size.height/2)];
     self.layer.borderWidth=width;
     self.layer.borderColor=[borColor CGColor];
 }

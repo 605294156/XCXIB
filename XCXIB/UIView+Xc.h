@@ -2,13 +2,13 @@
 //  UIView+HD.h
 //  djBI
 //
-//  Created by MQ on 2/24/16.
-//  Copyright © 2016 abnerh. All rights reserved.
+//  Created by XiaoCheng on 7/24/16.
+//  Copyright © 2019 赵思集团. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 //IB_DESIGNABLE
-@interface UIView (MQ)
+@interface UIView (Xc)
 
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 
@@ -21,8 +21,8 @@
 /** 边框颜色*/
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
 
-+ (__kindof UIView *)MQLoadNibView;
-- (void)MQSetViewCircleWithBorderWidth:(CGFloat) width andColor:(UIColor *)borColor;
-- (void)MQViewSetCornerRadius:(CGFloat)radius;
++ (__kindof UIView *)XcLoadNibView;
+- (void)XcSetViewCircleWithBorderWidth:(CGFloat) width andColor:(UIColor *)borColor;
+- (void)XcViewSetCornerRadius:(CGFloat)radius;
 
 @end
