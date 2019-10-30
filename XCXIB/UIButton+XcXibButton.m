@@ -12,6 +12,7 @@
 @implementation UIButton (XcXibButton)
 @dynamic colorDisabled;
 @dynamic colorNormal;
+@dynamic colorSelected;
 - (UIImage*) createImageWithColor:(UIColor *) color cornerRadius:(CGFloat) cornerRadius{
     //图片尺寸
     CGRect rect = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
