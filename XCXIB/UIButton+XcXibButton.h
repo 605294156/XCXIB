@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIButton (XcXibButton)
 @property (nonatomic,strong) IBInspectable UIColor *colorNormal;
 @property (nonatomic,strong) IBInspectable UIColor *colorDisabled;
+@property (nonatomic,strong) IBInspectable UIColor *colorSelected;
 @end
 
 NS_ASSUME_NONNULL_END

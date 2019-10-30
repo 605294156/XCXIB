@@ -47,6 +47,10 @@
     [self setBackgroundImage:[self createImageWithColor:colorDisabled cornerRadius:self.layer.cornerRadius] forState:UIControlStateDisabled];
 }
 
+- (void) setColorSelected:(UIColor *)colorSelected{
+    [self setBackgroundImage:[self createImageWithColor:colorSelected cornerRadius:self.layer.cornerRadius] forState:UIControlStateSelected];
+}
+
 - (CGFloat)cornerRadius
 {
     return [objc_getAssociatedObject(self, @selector(cornerRadius)) floatValue];

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "XCXIB"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "这是个常用xib的工具 author:成."
 
   # This description is used to generate tags and improve search results.
@@ -28,6 +28,7 @@ Pod::Spec.new do |spec|
                     1、增加UIbutton相关xib
                     2、增加UIlabel相关xib
                     3、增加UIview相关xib
+                    4、增加UIbutton相关xib的Selected
                    DESC
 
   spec.homepage     = "https://github.com/605294156/XCXIB.git"
